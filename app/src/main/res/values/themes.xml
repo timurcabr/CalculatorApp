@@ -14,12 +14,30 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="ButtonBack" parent="Theme.MaterialComponents.Light">
-        <!-- Primary brand color. -->
-        <item name="background">@drawable/btn_back</item>
-        <item name="android:radius">100dp</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    <style name="ButtonNumbers" parent="Theme.MaterialComponents.Light">
+        <item name="backgroundTint">@color/numbers</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:textSize">30sp</item>
+        <item name="rippleColor">@color/white</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ButtonOperators" parent="Theme.MaterialComponents.Light">
+        <item name="backgroundTint">@color/operators</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:textSize">30sp</item>
+        <item name="rippleColor">@color/white</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ButtonClear" parent="Theme.MaterialComponents.Light">
+        <item name="backgroundTint">@color/clear</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:textSize">30sp</item>
+        <item name="rippleColor">@color/white</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>
