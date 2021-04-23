@@ -1,7 +1,9 @@
 package com.example.calculatorapp.presenter;
 
+import android.content.Intent;
 import android.util.Log;
 
+import com.example.calculatorapp.R;
 import com.example.calculatorapp.model.CalculatorOperations;
 import com.example.calculatorapp.view.CalculatorView;
 
@@ -20,9 +22,12 @@ public class CalculatorPresenter {
 
     public void onButtonEqual(double a, String operand, double b) {
         double result = calculatorOperations.binaryOperation(a, b, operand);
-//        Log.i("result", "MainActivity " + a + " " + b);
-//        Log.i("result", "Calculation: " + result);
-        calculatorView.showResult(String.valueOf(result));
+        if (b == 0){
+            calculatorView.showResult(null);
+        }
+        else {
+            calculatorView.showResult(String.valueOf(result));
+        }
     }
 
 }
