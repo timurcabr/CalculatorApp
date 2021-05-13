@@ -84,10 +84,13 @@ public class MainActivity extends AppCompatActivity implements CalculatorView {
 
     @Override
     public void showResult(String result) {
-//        Log.i("result", "show result: " + result);
         numbers.setText("");
         builder.setLength(0);
-        numbers.setText(result);
+        if(result == null){
+            numbers.setText(getResources().getText(R.string.divisionMessage));
+        }else {
+            numbers.setText(result);
+        }
     }
 
     @Override
